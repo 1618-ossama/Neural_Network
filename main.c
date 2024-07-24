@@ -94,8 +94,13 @@ Matrix *dot_product(Matrix *a , Matrix *b){
     return c;
 }
 
+float activation_funtion(float x){
+    return  (1/(1+expf(-x))) ; // sigmoid_function
+}
 
-
+// loss_function();
+// gradiant_descent_function();
+// update_function();
 
 
 Network *construct_Network(int layerCount , int *neuron_Layer){
